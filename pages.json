@@ -1,0 +1,105 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "我的校园",
+				"navigationStyle":"custom"
+			}
+		}
+	    ,{
+            "path" : "pages/community/community",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "校园社区",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/message/message",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "互动消息",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/home/home",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "个人中心",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/common/commonArticle",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/common/reviewArticle",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "预览",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/common/addArticle",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "新增",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"easycom": {
+			"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+		},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},"tabBar": {
+	"color": "#7A7E83",
+	"selectedColor": "#3c9cff",
+	"borderStyle": "black",
+	"backgroundColor": "#ffffff",
+	"list": [{
+		"pagePath": "pages/index/index",
+		"iconPath": "static/tab1-0.png",
+		"selectedIconPath": "static/tab1-1.png",
+		"text": "校园动态"
+	}, {
+		"pagePath": "pages/community/community",
+		"iconPath": "static/tab2-0.png",
+		"selectedIconPath": "static/tab2-1.png",
+		"text": "校园社区"
+	}, {
+		"pagePath": "pages/message/message",
+		"iconPath": "static/tab3-0.png",
+		"selectedIconPath": "static/tab3-1.png",
+		"text": "消息订阅"
+	}, {
+		"pagePath": "pages/home/home",
+		"iconPath": "static/tab4-0.png",
+		"selectedIconPath": "static/tab4-1.png",
+		"text": "个人中心"
+	}]
+}
+}
